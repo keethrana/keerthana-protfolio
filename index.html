@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Keerthana Rajkumar | Portfolio</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Keerthana Rajkumar</h1>
+            <p>MCA Student | Aspiring Digital Marketing Executive</p>
+
+            <div class="contact">
+                <span>📍 Tamil Nadu, India</span>
+                <span>📞 +91 XXXXX XXXXX</span>
+                <span>📧 yourname@email.com</span>
+            </div>
+
+            <a href="#" class="btn">LinkedIn</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="section">
+        <h2>About Me</h2>
+        <p>
+            Enthusiastic MCA student with a strong interest in Digital Marketing,
+            SEO, and Social Media Marketing. Passionate about learning new
+            marketing strategies and eager to contribute creative ideas while
+            building a successful career in digital marketing.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+        <h2>Skills</h2>
+
+        <div class="skills">
+            <div class="card">SEO</div>
+            <div class="card">Social Media Marketing</div>
+            <div class="card">Content Writing</div>
+            <div class="card">Canva</div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+        <h2>Education</h2>
+
+        <div class="box">
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p>2025 – Present</p>
+        </div>
+
+        <div class="box">
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p>Vivekanandha College of Arts and Sciences for Women</p>
+            <p>2022 – 2025 | 74%</p>
+        </div>
+    </section>
+
+    <!-- Project -->
+    <section class="section">
+        <h2>Academic Project</h2>
+
+        <div class="box">
+            <h3>Student Management System</h3>
+
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, React.js, MongoDB</p>
+
+            <ul>
+                <li>Designed and developed a responsive student management system.</li>
+                <li>Implemented login, student record management, and CRUD operations.</li>
+                <li>Created a user-friendly interface for efficient data management.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section">
+        <h2>Certifications</h2>
+
+        <ul>
+            <li>Google Digital Garage – Fundamentals of Digital Marketing</li>
+            <li>HubSpot Academy – Content Marketing Certification</li>
+            <li>Great Learning – Introduction to Digital Marketing</li>
+            <li>Infosys Springboard – Digital Marketing Basics</li>
+        </ul>
+    </section>
+
+    <!-- Languages -->
+    <section class="section">
+        <h2>Languages</h2>
+
+        <div class="skills">
+            <div class="card">English</div>
+            <div class="card">Tamil</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Keerthana Rajkumar | Portfolio</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Select all sections
+        const sections = document.querySelectorAll(".section");
+
+        // Scroll Animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+
+        // LinkedIn Button Hover
+        const button = document.querySelector(".btn");
+
+        button.addEventListener("mouseenter", () => {
+            button.style.transform = "scale(1.08)";
+        });
+
+        button.addEventListener("mouseleave", () => {
+            button.style.transform = "scale(1)";
+        });
+    </script>
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
+</body>
+</html>give me a atractive animation for these code in css and js
