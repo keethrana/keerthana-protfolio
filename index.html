@@ -8,54 +8,104 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
     <title>Keerthana Rajkumar | Portfolio</title>
 </head>
 <body>
+    <div class="cursor-glow"></div>
+    <div class="particle-layer" aria-hidden="true"></div>
 
     <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Keerthana Rajkumar</h1>
-            <p>MCA Student | Aspiring Digital Marketing Executive</p>
+    <header class="hero">
+        <nav class="nav">
+            <div class="nav-inner container">
+                <a href="#" class="logo"><span>KR</span> Portfolio</a>
+                <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+                <ul class="nav-links">
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container hero-content">
+            <div>
+                <div class="eyebrow">MCA Fresher • Future Tech Professional</div>
+                <h1>Hi, I'm <span>Keerthana</span></h1>
+                <p class="hero-subtitle">A creative and ambitious MCA student with a strong interest in communication, networking, and modern technology. I build polished digital experiences with a futuristic, professional edge.</p>
 
-            <div class="contact">
-                <span>📍 Tamil Nadu, India</span>
-                <span>📞 +91 XXXXX XXXXX</span>
-                <span>📧 yourname@email.com</span>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Let's Connect</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="GitHub">GH</a>
+                    <a href="#" aria-label="Email">✉</a>
+                </div>
             </div>
 
-            <a href="#" class="btn">LinkedIn</a>
+            <div class="hero-visual">
+                <div class="orb-card">
+                    <div class="orb orb-one"></div>
+                    <div class="orb orb-two"></div>
+                    <div class="tech-stack">
+                        <span>Networking</span>
+                        <span>Communication</span>
+                        <span>UI/UX</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- About -->
-    <section class="section">
-        <h2>About Me</h2>
+    <section id="about" class="section">
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">About</span>
+                <h2>About Me</h2>
+            </div>
+        </div>
         <p>
-            Enthusiastic MCA student with a strong interest in Digital Marketing,
-            SEO, and Social Media Marketing. Passionate about learning new
-            marketing strategies and eager to contribute creative ideas while
-            building a successful career in digital marketing.
+            I am an MCA fresher with a strong interest in communication,
+            networking, and professional growth. I am eager to learn, build
+            meaningful connections, and contribute creative ideas while
+            developing my career in a dynamic professional environment.
         </p>
     </section>
 
     <!-- Skills -->
-    <section class="section">
-        <h2>Skills</h2>
+    <section id="skills" class="section">
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">Skills</span>
+                <h2>Core Strengths</h2>
+            </div>
+        </div>
 
         <div class="skills">
-            <div class="card">SEO</div>
-            <div class="card">Social Media Marketing</div>
-            <div class="card">Content Writing</div>
+            <div class="card">Communication</div>
+            <div class="card">Teamwork</div>
             <div class="card">Canva</div>
+            <div class="card">Creative Thinking</div>
+            <div class="card">Networking</div>
         </div>
     </section>
 
     <!-- Education -->
-    <section class="section">
-        <h2>Education</h2>
+    <section id="education" class="section">
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">Education</span>
+                <h2>Academic Journey</h2>
+            </div>
+        </div>
 
         <div class="box">
             <h3>Master of Computer Applications (MCA)</h3>
@@ -70,25 +120,35 @@
     </section>
 
     <!-- Project -->
-    <section class="section">
-        <h2>Academic Project</h2>
+    <section id="projects" class="section">
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">Project</span>
+                <h2>Academic Project</h2>
+            </div>
+        </div>
 
         <div class="box">
-            <h3>Student Management System</h3>
+            <h3>Chatbot for the Mining Industry</h3>
 
-            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, React.js, MongoDB</p>
+            <p><strong>Focus:</strong> Learning and speaking about mining protocols in a simple and interactive way.</p>
 
             <ul>
-                <li>Designed and developed a responsive student management system.</li>
-                <li>Implemented login, student record management, and CRUD operations.</li>
-                <li>Created a user-friendly interface for efficient data management.</li>
+                <li>Designed a chatbot concept to help users understand mining industry protocols.</li>
+                <li>Focused on providing clear guidance and interactive communication for learning purposes.</li>
+                <li>Explored how AI-based conversation can make technical information easier to access.</li>
             </ul>
         </div>
     </section>
 
     <!-- Certifications -->
-    <section class="section">
-        <h2>Certifications</h2>
+    <section id="certifications" class="section">
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">Certifications</span>
+                <h2>Credentials</h2>
+            </div>
+        </div>
 
         <ul>
             <li>Google Digital Garage – Fundamentals of Digital Marketing</li>
@@ -99,13 +159,48 @@
     </section>
 
     <!-- Languages -->
-    <section class="section">
-        <h2>Languages</h2>
+    <section id="languages" class="section">
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">Languages</span>
+                <h2>Languages</h2>
+            </div>
+        </div>
 
         <div class="skills">
             <div class="card">English</div>
             <div class="card">Tamil</div>
         </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+        <div class="section-heading">
+            <div>
+                <span class="section-tag">Contact</span>
+                <h2>Contact Me</h2>
+            </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+            <div class="form-field">
+                <input type="text" id="name" name="name" placeholder=" " required>
+                <label for="name">Full name</label>
+            </div>
+
+            <div class="form-field">
+                <input type="email" id="email" name="email" placeholder=" " required>
+                <label for="email">Email address</label>
+            </div>
+
+            <div class="form-field">
+                <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+                <label for="message">Your message</label>
+            </div>
+
+            <button type="submit" class="btn submit-btn">Send Message</button>
+            <div class="submit-success" aria-hidden="true">✓ Sent</div>
+        </form>
     </section>
 
     <!-- Footer -->
@@ -114,40 +209,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script>
-        // Select all sections
-        const sections = document.querySelectorAll(".section");
-
-        // Scroll Animation
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                }
-            });
-        }, {
-            threshold: 0.2
-        });
-
-        sections.forEach((section) => {
-            observer.observe(section);
-        });
-
-        // LinkedIn Button Hover
-        const button = document.querySelector(".btn");
-
-        button.addEventListener("mouseenter", () => {
-            button.style.transform = "scale(1.08)";
-        });
-
-        button.addEventListener("mouseleave", () => {
-            button.style.transform = "scale(1)";
-        });
-    </script>
-<!-- JavaScript -->
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
-</body>
-</html>give me a atractive animation for these code in css and js
